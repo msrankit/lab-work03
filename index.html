@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Responsive Portfolio — Beginner Developer</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="band"></div>
+  <div class="topbar">
+    <div class="brand">My Portfolio</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+
+  <header class="hero animate">
+    <div class="intro">
+      <h1>Hi, I am <span class="accent">Full Stack Developer</span></h1>
+      <p>Building modern web applications with clean, responsive design. Beginner-friendly portfolio showcasing recent work and learning progress.</p>
+    </div>
+    <div class="avatar" aria-hidden="true">
+      <!-- reference to the uploaded screenshot; will be transformed to URL -->
+      <img src="https://scontent-del3-1.cdninstagram.com/v/t51.2885-19/571333455_18050027738655074_5929429612031405792_n.jpg?stp=dst-jpg_s320x320_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDgwLmMyIn0&_nc_ht=scontent-del3-1.cdninstagram.com&_nc_cat=102&_nc_oc=Q6cZ2QFBLgIFxTCfq0qy6GtkCMg_Ngy1OuCl9k0THrovCuPvRFqECU8Y-u1jcBsNkuW775o&_nc_ohc=-x4NLD3wqkcQ7kNvwEvLTDg&_nc_gid=0hXfsmSY6UUJoN3RSPmsRw&edm=APs17CUBAAAA&ccb=7-5&oh=00_AfhuxBVsg62MQJZWNDgE14k97b2lBxvDIAHMq08Aju9C_g&oe=69287B9E&_nc_sid=10d13b" alt="profile" />
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- About + Skills in a two-column grid on larger screens -->
+    <section id="about" class="grid-two">
+      <div>
+        <h2 class="section-title">About Me</h2>
+        <p>I have recently started learning web development. I focus on HTML & CSS and enjoy creating responsive, accessible pages that look great across devices. I am learning JavaScript and modern frontend workflows.</p>
+      </div>
+
+      <aside>
+        <h3 class="section-title">My Skills</h3>
+        <div class="skills">
+          <span class="skill-pill">HTML</span>
+          <span class="skill-pill">CSS</span>
+          <span class="skill-pill">Responsive Design</span>
+        </div>
+      </aside>
+    </section>
+
+    <section id="projects">
+      <h2 class="section-title">My Projects</h2>
+      <div class="projects">
+        <article class="project-card">
+          <h3>Project 1</h3>
+          <p>A simple responsive layout built with HTML & CSS.</p>
+        </article>
+        <article class="project-card">
+          <h3>Project 2</h3>
+          <p>A beginner-friendly portfolio page demonstrating Flexbox and Grid.</p>
+        </article>
+        <article class="project-card">
+          <h3>Project 3</h3>
+          <p>Another small project showing layout and forms.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2 class="section-title">Contact Me</h2>
+      <div class="contact">
+        <form class="form" action="#" method="post">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" placeholder="Your name" required>
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="you@example.com" required>
+
+          <label for="msg">Message</label>
+          <textarea id="msg" name="message" rows="5" placeholder="Your message" required></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <small>&copy; 2025 — Beginner Developer • Built with HTML & CSS</small>
+  </footer>
+</body>
+</html>
